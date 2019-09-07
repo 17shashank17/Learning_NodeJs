@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/assets/style1.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <% include partials/base.ejs %>
+    <h1>Welcome to Contact Page</h1>
+    <h2>Enter Your Details</h2>
+    <form action="/contact" method="POST">
+        <label for="who">Enter your name</label><br>
+        <input type="text" name="who"><br>
+        <label for="email">Enter your Email</label><br>
+        <input type="text" name="email"><br><br>
+        <input type="submit" value="Submit Details">
+    </form>
+</body>
+</html>
